@@ -9,14 +9,7 @@ import utilities.Driver;
 
 import java.util.List;
 
-public class C02_Priority {
-
-    // https://www.testotomasyonu.com/ adresine gidin.
-    // Olusturacaginiz 3 farkli test method’unda asagida verilen görevleri yapin.
-    //	1. Test : Testotomasyonu ana sayfaya gittiginizi test edin
-    //	2. Test : search Box’i kullanarak “phone” icin arama yapin \
-    //            ve arama sonucunda urun bulunabildigini test edin
-    //  3.Test : ilk urunu tiklayin ve urun isminin case sensitive olmaksizin phone icerdigini test edin
+public class C04_DependsOnMethods {
 
     List<WebElement> bulunanUrunElementleriList;
 
@@ -64,5 +57,4 @@ public class C02_Priority {
         Driver.quitDriver();
 
     }
-
 }
