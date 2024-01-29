@@ -1,4 +1,4 @@
-package tests.testNG_POM;
+package tests.day17_testNG_POM;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
