@@ -15,6 +15,13 @@ public class Driver {
         belirlenen browser'a uygun webDriver objesi olusturmak
      */
 
+    private Driver(){
+        // baska class'larin Driver class'indan obje olusturmasini engellemek icin
+        // Singleton pattern kullanilmistir
+        // Singleton pattern class'dan obje olusturulmasini engellemek icin
+        // constructor'i gorunur yapip, erisimini private yapmaya dayanir
+    }
+
     public static WebDriver driver;
 
     public static WebDriver getDriver(){
