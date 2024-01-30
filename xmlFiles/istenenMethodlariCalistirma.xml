@@ -1,0 +1,34 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!-- day17 C01'de gecersizPasword method'unu  ve
+     day15 C02'de ilkUrunIsimTesti disindaki tum method'lari calistirin
+
+     Eger bir xml icerisinde
+     farkli package, class veya method'lar calistiracaksak
+     xml dosyayi yazarken
+     hiyerarsiye uygun yerden kirilim yapmaliyiz
+     -->
+
+
+<suite name="secilen method'lari calistirma">
+    
+    <test name="test">
+        
+        <classes>
+            <class name="tests.day17_testNG_POM.C01_NegatifLoginTesti">
+                <methods>
+                    <include name="gecersizPasswordTesti"></include>
+                </methods>
+            </class>
+            <class name="tests.day15_TestNG_POM.C02_Priority">
+                <methods>
+                    <exclude name="ilkUrunIsimTesti"></exclude>
+                </methods>
+            </class>
+        </classes>
+        
+    </test>
+    
+</suite>
+
+

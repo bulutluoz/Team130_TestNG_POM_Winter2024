@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!-- day15 C01, day16 C01, C02 ve  day17 C01 class'larini calistirin-->
+
+<suite name="Login testleri">  
+
+    <test name="smoke test">
+        
+        <classes>
+            
+            <class name="tests.day15_TestNG_POM.C01_PozitifLoginTesti"></class>
+            <class name="tests.day16_TestNG_POM.C01_PageClassIlePozitifLoginTesti"></class>
+            <class name="tests.day16_TestNG_POM.C02_PageClassKullanimi"></class>
+            <class name="tests.day17_testNG_POM.C01_NegatifLoginTesti"></class>
+            
+        </classes>
+        
+        
+    </test>
+    
+</suite>
