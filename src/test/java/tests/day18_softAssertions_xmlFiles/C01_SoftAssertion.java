@@ -50,7 +50,7 @@ public class C01_SoftAssertion {
         String expectedUrl = ConfigReader.getProperty("toUrl")+"/";
         String actualUrl = Driver.getDriver().getCurrentUrl();
 
-        // Assert.assertEquals(actualUrl,expectedUrl);
+        //Assert.assertEquals(actualUrl,expectedUrl);
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertEquals(actualUrl,expectedUrl,"URL testi failed"); // 1.assertion
 
