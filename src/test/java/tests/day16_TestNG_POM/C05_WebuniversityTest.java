@@ -10,8 +10,8 @@ import utilities.ReusableMethods;
 
 public class C05_WebuniversityTest {
 
-    @Test
-    public void webUniversitytest(){
+    @Test(groups = {"smoke","e2e","regression"})
+    public void webUniversityTest(){
 
         //1."https://webdriveruniversity.com/" adresine gidin
         Driver.getDriver().get("http://webdriveruniversity.com/");

@@ -9,7 +9,7 @@ import utilities.ReusableMethods;
 
 public class C06_ConfigurationPropertiesDosyasiKullanma {
 
-    @Test
+    @Test(groups = "regression")
     public void pozitifLoginTesti(){
         //1- https://www.testotomasyonu.com/ anasayfasina gidin
         Driver.getDriver().get(ConfigReader.getProperty("toUrl"));

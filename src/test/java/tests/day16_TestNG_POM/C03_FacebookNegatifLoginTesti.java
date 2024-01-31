@@ -9,7 +9,7 @@ import utilities.ReusableMethods;
 
 public class C03_FacebookNegatifLoginTesti {
 
-    @Test
+    @Test(groups = {"smoke", "e2e"})
     public void faceBookNegatifLoginTesti(){
         //1 - https://www.facebook.com/ adresine gidin
         Driver.getDriver().get("https://www.facebook.com/");

@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!-- smoke testleri calistirin
+     .xml dosyalari ile test method'larini calistirirken
+     2 hiyerarsi kullaniyoruz
+      - <groups> ile calistirilacak veya calistirilmayacak gruplari belirliyoruz
+      - <groups> disinda baska bir hiyerarsi ile
+        calistirilacak test method'larinin hangi package veya class'larin
+        altinda oldugunu gosteriyoruz
+
+      include yazan gruplar calisir,
+      exclude yazan gruplar calismaz
+      bir test method'unda ikisi de varsa exclude olur
+    -->
+
+<suite name="Istenen gruplari calistirma">
+
+    <test name="smoke test grup olarak calistirma">
+
+        <groups>
+            <run>
+                <include name="smoke"></include>
+                <include name="regression"></include>
+                <exclude name="e2e"></exclude>
+            </run>
+        </groups>
+        
+        <packages>
+            <package name="tests.*"></package>
+        </packages>
+        
+        
+    </test>
+
+</suite>

@@ -8,7 +8,7 @@ import utilities.ReusableMethods;
 
 public class C01_PageClassIlePozitifLoginTesti {
 
-    @Test
+    @Test(groups = "smoke")
     public void pozitifLoginTesti(){
 
         //1- https://www.testotomasyonu.com/ anasayfasina gidin
