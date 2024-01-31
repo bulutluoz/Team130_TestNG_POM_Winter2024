@@ -8,8 +8,8 @@
         
         <packages>
             
-            <package name="tests.day15_TestNG_POM"></package>
-            <package name="tests.day16_TestNG_POM"></package>
+            <package name="tests.day19_testNGReports"></package>
+
         </packages>
         
     </test>

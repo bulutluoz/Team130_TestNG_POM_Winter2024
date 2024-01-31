@@ -36,7 +36,7 @@ public class C02_RaporluAramaSepetiTesti extends TestBaseRapor {
         //6- kaydettiginiz urun ismi ile sepetteki urun isminin ayni oldugunu test edin
         String sepettekiUrunIsmi = testOtomasyonPage.sepettekiUrunIsimElementi.getText();
         ReusableMethods.bekle(1);
-        Assert.assertEquals(sepettekiUrunIsmi.toLowerCase(),sayfadakiUrunIsmi.toLowerCase());
+        Assert.assertEquals(sepettekiUrunIsmi,sayfadakiUrunIsmi);
         extentTest.pass(" kaydettigi urun ismi ile sepetteki urun isminin ayni oldugunu test eder");
         //7- sayfayi kapatin
         Driver.quitDriver();
