@@ -23,7 +23,7 @@
 <suite name="CrossBrowser testler">
 
     <test name="chrome ile calisacak testler">
-        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="crossBrowser" value="chrome"></parameter>
         <packages>
             <package name="tests.day20_CrossBrowserCalisacakTestler"></package>
         </packages>
@@ -31,7 +31,7 @@
     </test>
 
     <test name="firefox ile calisacak testler">
-        <parameter name="browser" value="firefox"></parameter>
+        <parameter name="crossBrowser" value="firefox"></parameter>
         <packages>
 
             <package name="tests.day20_CrossBrowserCalisacakTestler"></package>
@@ -40,3 +40,21 @@
     </test>
 
 </suite>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

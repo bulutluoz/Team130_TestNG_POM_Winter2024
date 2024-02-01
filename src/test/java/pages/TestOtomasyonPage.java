@@ -45,7 +45,7 @@ public class TestOtomasyonPage {
     @FindBy(xpath = "//*[@*='product-box my-2  py-1']")
     public List<WebElement> bulunanUrunElementleriList;
 
-    @FindBy(xpath = " //div[@class=' heading-sm mb-4']")
+    @FindBy(xpath = "//div[@class=' heading-sm mb-4']")
     public WebElement urunSayfasindaUrunIsimElementi;
 
     @FindBy(xpath = "//button[@class='add-to-cart']")
