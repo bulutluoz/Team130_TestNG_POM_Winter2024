@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import pages.TestOtomasyonPage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 public class C02_UrunSepetiTesti {
 
@@ -18,6 +19,7 @@ public class C02_UrunSepetiTesti {
         testOtomasyonPage.aramaKutusu.sendKeys("phone" + Keys.ENTER);
 
         //3- Listelenen sonuclardan ilkini tiklayin
+        ReusableMethods.bekle(1);
         testOtomasyonPage.bulunanUrunElementleriList.get(0).click();
         //4- urun ismini kaydedin ve sepete ekleyin
         String urunSayfasindakiUrunIsmi = testOtomasyonPage.urunSayfasindaUrunIsimElementi.getText();

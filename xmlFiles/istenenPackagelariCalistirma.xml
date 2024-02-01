@@ -8,7 +8,7 @@
         
         <packages>
             
-            <package name="tests.day19_testNGReports"></package>
+            <package name="tests.day17_testNG_POM"></package>
 
         </packages>
         
